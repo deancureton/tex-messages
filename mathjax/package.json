@@ -1,0 +1,10 @@
+{
+  "name": "latex-messages-mathjax",
+  "private": true,
+  "scripts": {
+    "build": "bun build entry.js --target=browser --minify --outfile=../Resources/mathjax.js"
+  },
+  "dependencies": {
+    "mathjax-full": "3.2.2"
+  }
+}
