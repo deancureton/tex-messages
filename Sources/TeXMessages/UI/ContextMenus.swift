@@ -71,7 +71,9 @@ enum ContextMenus {
         if let symbol {
             item.image = NSImage(systemSymbolName: symbol, accessibilityDescription: nil)?
                 .withSymbolConfiguration(.init(pointSize: 13, weight: .regular))
+            #if canImport(AppKit, _version: 2700)
             if #available(macOS 27.0, *) { item.preferredImageVisibility = .visible }
+            #endif
         }
         if let action {
             let target = MenuAction(action)

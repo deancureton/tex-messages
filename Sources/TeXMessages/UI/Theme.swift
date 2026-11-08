@@ -126,7 +126,9 @@ extension NSGlassEffectView {
                 ? NSColor.black.withAlphaComponent(0.14)
                 : NSColor.white.withAlphaComponent(0.0)
         }
+        #if canImport(AppKit, _version: 2700)
         if #available(macOS 27.0, *) { effectIsInteractive = true }
+        #endif
     }
 }
 
