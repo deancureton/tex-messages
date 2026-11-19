@@ -12,7 +12,7 @@ yes, these are real imessages, sent and received through your actual account
 brew install --cask deancureton/tap/tex-messages
 ```
 
-needs macos 26+ and the xcode command line tools. the first install compiles it, so give it a minute. it reads your messages database, so grant full disk access when it asks
+needs macos 26+. it reads your messages database, so grant full disk access when it asks
 
 ## usage
 
